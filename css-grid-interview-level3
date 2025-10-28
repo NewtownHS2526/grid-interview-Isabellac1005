@@ -1,0 +1,62 @@
+* Container grid for December calendar */
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 100px); /* 7 days per week */
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Day titles (Sunday to Saturday) */
+.day-title {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+}
+
+/* General styles for all grid items */
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+
+/* Specific classes for colors */
+.no-school {
+    background-color: #d3d3d3; /* gray */
+    color: #000;
+}
+
+.school {
+    background-color: #4682b4; /* steel blue */
+    color: white;
+}
+
+.weekend {
+    background-color: #ff6347; /* tomato red */
+    color: white;
+}
+
+.event {
+    background-color: #ffa500; /* orange */
+    color: white;
+}
+
+.half-day {
+    background-color: #32cd32; /* lime green */
+    color: white;
+}
+
+.winter-break {
+    background-color: #8a2be2; /* blue violet */
+    color: white;
+}
